@@ -13,7 +13,7 @@ const emailList = [
     'dev@gmail.it',
 ]
 
-
+// vado a pescare gli elementi in html 
 const button = document.querySelector('.btn.btn-primary');
 const input = document.getElementById('email');
 const output = document.getElementById('output');
@@ -31,11 +31,11 @@ button.addEventListener('click', function() {
     }
 
     if (find) { 
-        console.log('trovato');
-        output.innerHTML = 'trovato';
+        console.log('Email trovata');
+        output.innerHTML = 'L\ indirizzo email è presente nella lista';
     } else {
-        console.log('non trovato');
-        output.innerHTML = 'non trovato ';
+        console.log('Email non trovata');
+        output.innerHTML = 'Questo indirizzo email non è presente nella lista';
     }
 });
 

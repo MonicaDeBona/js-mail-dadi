@@ -8,15 +8,21 @@
 
 //numero random giocatore generato con math.random (genera un numero casuale tra 0 e n, n escluso)
 const numberPlayer = Math.floor(Math.random() * 6) + 1;
-console.log(numberPlayer);
+console.log('User chose ' + numberPlayer);
  //numero random computer
 const numberComputer = Math.floor(Math.random() * 6) + 1;
-console.log( numberComputer, 'ehufh');
+console.log( 'Computer chose ' + numberComputer);
 
 //confrontare i valori dei risultati, il n > vince
 if (numberPlayer > numberComputer) {
     console.log('Player WINS!');
-} else {
+} else if (numberPlayer < numberComputer) {
     console.log('Computer WINS!');
+} else {
+    console.log('The score is TIED!');
 }
+
+
+
+
 
